@@ -1,0 +1,40 @@
+// 变量
+@fontSize:16px;
+@cell-height:46px;
+@radius:5px;
+.border(@type:solid,@width:1px,@color:#cecece) {
+	border:@width @type @color;
+}
+
+.base-form{
+	padding:10px;
+}
+.form-control{
+	box-sizing:border-box;
+	display:block;
+	width:100%;
+	height: @cell-height;
+	line-height:@cell-height;
+	margin-bottom:12px;
+    padding-left: 10px;
+    font-size: @fontSize;
+    border-radius: @radius;
+    .border();
+}
+.form-inline{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content:space-between;
+	.form-control{
+		display:inline-block;
+		flex:auto;
+		width:49%;
+		&:first-child{
+			margin-right:2%;
+		}
+	}
+} 

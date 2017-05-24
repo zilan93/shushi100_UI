@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>form</title>
+	<link rel="stylesheet" href="style/ui.css">
+</head>
+<body>
+	<div class="ui-wrap">
+		<h2>常规表单</h2>
+		<div class="base-form">
+			<form action="">
+				<div class="form-inline">
+					<select class="form-control levelDistrict">
+						<option value="0">省份</option>
+						<option value="1">北京</option>
+					</select>
+					<select class="form-control levelDistrict">
+						<option value="0">城市</option>
+						<option value="4">北京</option>
+					</select>
+				</div>
+				<div class="form-inline">
+					<input type="text" class="form-control" placeholder="面积" maxlength="8" id="design_area">
+					<select class="form-control">
+	                    <option value="">房型</option>
+	                    <option value="1">客餐厅</option>
+                    </select>
+				</div>
+				<select id="houseid" class="form-control">
+                    <option value="">户型</option>
+                </select>
+				<input type="text" class="form-control" name="name" placeholder="您的称呼" id="username">
+				<input type="text" placeholder="手机号码（您的隐私将被严格保密）" id="mobile" class="form-control">
+				<div class="form-inline">
+					<input type="text" class="form-control" placeholder="填写验证码">
+					<input class="btn btn-verification" type="button" value="获取验证码">
+				</div>
+				<button class="btn btn-default btn-block"></button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
