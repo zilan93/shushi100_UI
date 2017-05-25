@@ -1,0 +1,47 @@
+.flex() {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+// 边框
+.border(@type:solid,@width:1px,@color:#cecece) {
+	border:@width @type @color;
+}
+//分隔线
+.border-line(top,@left) {
+	top:0;
+}
+.border-line(bottom,@left) {
+	bottom:0;
+}
+.border-line(@_,@left) {
+	content:"";
+	position:absolute;
+	width:100%;
+	height:1px;
+	left:@left;
+	border:1px solid #e5e5e5;
+	-webkit-transform-origin:0 0;
+	transform-origin:0 0;
+	-webkit-transform:scaleY(0.5);
+	transform:scaleY(0.5);
+	z-index:2;
+}
+//箭头
+.arrow(right) {
+	content:"";
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top:-4px;
+	height:6px;
+	width:6px;
+	border-width:2px 2px 0 0;
+	border-color:#c8c8cd;
+	border-style:solid;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}

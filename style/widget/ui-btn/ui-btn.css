@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 46px;
+  height: 46px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #cecece;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-default {
+  color: #fff;
+  background-color: #5DB9FF;
+  border-color: #5DB9FF;
+}

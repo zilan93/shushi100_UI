@@ -1,1 +1,48 @@
-ui-form-cell
+@import url(../ui-base/ui-reuse.less);
+
+.form-cells{
+	position:relative;
+	font-size:16px;
+	line-height:1.25;
+	background-color:#fff;
+	overflow:hidden;
+	&:before{
+		.border-line(top,0);
+	}
+	&:after{
+		.border-line(bottom,0);
+	}
+	.form-cell:first-child:before{
+		content:normal;
+	}
+}
+.form-cell{
+	.flex();
+	position:relative;
+	padding-left:15px;
+	&:before{
+		.border-line(top,15px);
+	}
+	&:after{
+		.arrow(right);
+	}
+}
+.form-cell-bd{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.form-cell-label{
+	display:block;
+	width:110px;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.form-cell-select{
+	width:100%;
+	padding-right:30px;
+	height:45px;
+	line-height:45px;
+	direction:rtl;
+	font-size:16px;
+}
