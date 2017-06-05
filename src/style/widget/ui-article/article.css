@@ -1,0 +1,23 @@
+/* 圆角 */
+/* 基础色 */
+/* 强调色 */
+/* 背景色 */
+/* 字体色 */
+/* 边框 */
+/* 按钮 */
+/* 字号 */
+/* 间距 */
+h2 {
+  margin: 15px auto;
+  line-height: 1.25;
+  font-size: 40px;
+}
+h3 {
+  margin: 10px auto;
+  line-height: 1.25;
+  font-size: 36px;
+}
+p {
+  font-size: 24px;
+  line-height: 1.6;
+}

@@ -1,0 +1,76 @@
+/*适应高清屏的边框*/
+/* 圆角 */
+/* 基础色 */
+/* 强调色 */
+/* 背景色 */
+/* 字体色 */
+/* 边框 */
+/* 按钮 */
+/* 字号 */
+/* 间距 */
+.color-wrapper {
+  padding: 0 0.2rem;
+}
+.base-colors p {
+  margin-bottom: 0.2rem;
+}
+.base-colors li {
+  float: left;
+  margin-right: 0.24rem;
+}
+.base-colors li div {
+  width: 1.52rem;
+  height: 1.52rem;
+}
+.base-colors .blue-normal {
+  background-color: #0097e0;
+}
+.base-colors .blue-bright {
+  background-color: #2fb2f6;
+}
+.base-colors .blue-dark {
+  background-color: #0087c9;
+}
+.base-colors .blue-brighter {
+  background-color: #83d5ff;
+}
+.base-colors .purple {
+  background-color: #6a7fa5;
+}
+.base-colors .orange-normal {
+  background-color: #ff5400;
+}
+.base-colors .orange-bright {
+  background-color: #ff7f2f;
+}
+.base-colors .red-bright {
+  background-color: #ff4452;
+}
+.base-colors .red-normal {
+  background-color: #ff2435;
+}
+.base-colors .green {
+  background-color: #4ed544;
+}
+.base-colors .brown {
+  background-color: #c7b292;
+}
+.base-colors .text-important {
+  background-color: #2a2a2a;
+}
+.base-colors .text-normal {
+  background-color: #666666;
+}
+.base-colors .text-info {
+  background-color: #b2b2b2;
+}
+.base-colors .border-color {
+  background-color: #dcdfe1;
+}
+.base-colors .default-bg {
+  background-color: #F8F8F8;
+  border: 1px solid #dcdfe1;
+}
+.base-colors .white-bg {
+  background-color: #fff;
+}

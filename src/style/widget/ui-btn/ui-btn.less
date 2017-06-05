@@ -1,0 +1,51 @@
+@import url(../../mixins/variable.less);
+@import url(../ui-base/ui-reuse.less);
+
+
+.btn{
+	box-sizing: border-box;
+	display:inline-block;
+	padding:0  25px;
+	font-size:@h5;
+	line-height: 0.8rem;//60px
+	text-align:center;
+	border-radius: @br-middle;
+	.border();
+}
+.btn-block{
+	display:block;
+	width:100%;
+	font-size: @h4;
+	line-height:1.173333rem;//88px
+	+ .btn-block{
+		margin-top:42px;
+	}
+}
+.btn-br{
+	line-height: 0.88rem;//66px
+	font-size: @h4;
+}
+.btn-default{
+	color:@text-white;
+	background-color:@blue-normal;
+	border-color:#5DB9FF;
+	&:active{
+		background-color: @blue-bright;
+	}
+}
+.btn-warning{
+	color:@text-white;
+	background-color:@red-normal;
+	border-color:#5DB9FF;
+	&:active{
+		background-color: @warning-color;
+	}
+}
+.btn-br-default{
+	color:@blue-normal;
+	border-color:@blue-normal;
+}
+.btn-br-disabled{
+	color:@gray;
+	border-color:@gray;
+}

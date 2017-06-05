@@ -1,0 +1,56 @@
+/* 圆角 */
+/* 基础色 */
+/* 强调色 */
+/* 背景色 */
+/* 字体色 */
+/* 边框 */
+/* 按钮 */
+/* 字号 */
+/* 间距 */
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0  25px;
+  font-size: 28px;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.106667rem;
+  border: 1px solid #cecece;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.173333rem;
+}
+.btn-block + .btn-block {
+  margin-top: 42px;
+}
+.btn-br {
+  line-height: 0.88rem;
+  font-size: 32px;
+}
+.btn-default {
+  color: #fff;
+  background-color: #0097e0;
+  border-color: #5DB9FF;
+}
+.btn-default:active {
+  background-color: #2fb2f6;
+}
+.btn-warning {
+  color: #fff;
+  background-color: #ff2435;
+  border-color: #5DB9FF;
+}
+.btn-warning:active {
+  background-color: #FF4553;
+}
+.btn-br-default {
+  color: #0097e0;
+  border-color: #0097e0;
+}
+.btn-br-disabled {
+  color: #d5d5d5;
+  border-color: #d5d5d5;
+}

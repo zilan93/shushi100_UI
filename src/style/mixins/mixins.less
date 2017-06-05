@@ -1,0 +1,42 @@
+/*适应高清屏的边框*/
+.border(bottom,@dis:1px,@bgcolor:#ececec){
+	width:100%;
+	left:0;
+	bottom:0;
+	height: @dis;
+	background-color: @bgcolor;
+}
+.border(top,@dis:1px,@bgcolor:#ececec){
+	width:100%;
+	left:0;
+	top:0;
+	height: @dis;
+	background-color: @bgcolor;
+}
+.border(left,@dis:1px,@bgcolor:#ececec){
+	left:0;
+	top:0;
+	width:@dis;
+	height: 200%;
+	background-color: @bgcolor;
+}
+.border(right,@dis:1px,@bgcolor:#ececec){
+	right:0;
+	top:0;
+	width:@dis;
+	height: 200%;
+	background-color: @bgcolor;
+}
+.border(@_,@dis:1px,@bgcolor:#ececec) {
+	content: "";
+	position:absolute;
+	-webkit-transform: scaleY(0.5);
+	-o-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	-webkit-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+.border_all(@width:1px,@style:solid,@color:#ececec) {
+	border:@width @style @color;
+}

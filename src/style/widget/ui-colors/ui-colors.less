@@ -1,0 +1,36 @@
+@import url(../../mixins/mixins.less);
+@import url(../../mixins/variable.less);
+
+.color-wrapper{
+	padding:0 0.2rem;
+}
+.base-colors{
+	p{
+		margin-bottom: 0.2rem;//15px
+	}
+	li{
+		float:left;
+		margin-right: 0.24rem;
+		div{
+			width:1.52rem;
+			height:1.52rem;
+		}
+	}
+	.blue-normal{background-color: @blue-normal;}
+	.blue-bright{background-color: @blue-bright;}
+	.blue-dark{background-color: @blue-dark;}
+	.blue-brighter{background-color: @blue-brighter;}
+	.purple{background-color: @purple;}
+	.orange-normal{background-color: @orange-normal;}
+	.orange-bright{background-color: @orange-bright;}
+	.red-bright{background-color: @red-bright;}
+	.red-normal{background-color: @red-normal;}
+	.green{background-color: @green;}
+	.brown{background-color: @brown;}	
+	.text-important{background-color: @text-important;}
+	.text-normal{background-color: @text-normal;}
+	.text-info{background-color: @text-info;}	
+	.border-color{background-color: @border-color;}
+	.default-bg{background-color: @default-bg;border:1px solid @border-color;}
+	.white-bg{background-color: @white-bg;}
+}
