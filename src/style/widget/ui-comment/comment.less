@@ -1,0 +1,31 @@
+@import url(../../mixins/variable.less);
+@import url(../ui-base/ui-base.less);
+
+/* 文章页点赞 */
+.evaluate-box{
+	margin:@space1 0 @space7;
+	border-top: 1px solid #E7E7E7;
+	overflow: hidden;
+	div{
+		float:left;
+		width:50%;
+		margin-top:10px;
+		padding-top:29px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.like{
+		border-right:1px solid #EDEDED;
+		color:@orange-normal;
+		.like-icon{
+			display: block;
+			font-size: @h1;
+		}
+	}
+	.dislike-icon{
+		display: block;
+		font-size: @h1;
+		color:#666;
+		.flipy;
+	}
+}

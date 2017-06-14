@@ -1,4 +1,33 @@
-@import url(../ui-base/ui-reuse.less);
+@import url(../ui-base/ui-base.less);
+
+.form-wrapper{
+	background: @white-bg;
+}
+.base-form{
+	padding:0.133333rem;//10px
+}
+.form-control{
+	box-sizing:border-box;
+	display:block;
+	width:100%;
+	height: @ceil-height;
+	line-height:@ceil-height;
+	margin-bottom:0.16rem;//12px
+    padding-left: 0.133333rem;//10px
+    font-size: @h4;
+    border-radius: @br-middle;
+    .border_all();
+}
+.form-inline{
+	.form-control{
+		display:inline-block;
+		flex:auto;
+		width:49%;
+		&:first-child{
+			margin-right:2%;
+		}
+	}
+} 
 
 .form-cells{
 	position:relative;
@@ -7,21 +36,20 @@
 	background-color:#fff;
 	overflow:hidden;
 	&:before{
-		.border-line(top,0);
+		.border(top,0);
 	}
 	&:after{
-		.border-line(bottom,0);
+		.border(bottom,0);
 	}
 	.form-cell:first-child:before{
 		content:normal;
 	}
 }
 .form-cell{
-	.flex();
 	position:relative;
-	padding-left:15px;
+	padding-left:0.2rem;//15px
 	&:before{
-		.border-line(top,15px);
+		.border(top,15px);
 	}
 	&:after{
 		.arrow(right);
@@ -34,15 +62,28 @@
 }
 .form-cell-label{
 	display:block;
-	width:110px;
+	width:1.466667rem;//110px
 	word-wrap:break-word;
 	word-break:break-all;
 }
 .form-cell-select{
 	width:100%;
-	padding-right:30px;
-	height:45px;
-	line-height:45px;
+	padding-right:0.4rem;//30px
+	height:0.6rem;//45px
+	line-height:0.6rem;//45px
 	direction:rtl;
 	font-size:16px;
+}
+
+
+.list-icon-form{
+	.form-cell{
+		padding-left:0.533333rem;//40px
+	}	
+	.mid-icon{
+		position:absolute;
+		left:0.2rem;//15px
+		top:50%;
+		margin-top:-8px;
+	}
 }

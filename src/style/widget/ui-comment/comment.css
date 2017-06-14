@@ -1,5 +1,4 @@
 @charset "utf-8";
-/*适应高清屏的边框*/
 /* 圆角 */
 /* 基础色 */
 /* 强调色 */
@@ -11,6 +10,7 @@
 /* 不常用字号 */
 /* 间距 */
 /* 表单 */
+/*适应高清屏的边框*/
 /* hcysun */
 /******* reset *******/
 html {
@@ -233,4 +233,37 @@ body {
 .crumbs-box li {
   float: left;
   font-size: 30px;
+}
+/* 文章页点赞 */
+.evaluate-box {
+  margin: 0.2rem 0 0.8rem;
+  border-top: 1px solid #E7E7E7;
+  overflow: hidden;
+}
+.evaluate-box div {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  padding-top: 29px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.evaluate-box .like {
+  border-right: 1px solid #EDEDED;
+  color: #ff5400;
+}
+.evaluate-box .like .like-icon {
+  display: block;
+  font-size: 48px;
+}
+.evaluate-box .dislike-icon {
+  display: block;
+  font-size: 48px;
+  color: #666;
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  transform: scaleY(-1);
+  /*IE*/
+  filter: FlipV;
 }

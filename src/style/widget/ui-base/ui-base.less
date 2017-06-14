@@ -12,15 +12,18 @@ html {
      font-family: Helvetica;
 }
 
-body {
-    font-size: 12px;
-}
 
 body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select {
     margin: 0;
     padding: 0;
     font-weight: normal;
     text-indent: 0;
+}
+
+body {
+    padding:0 0.346667rem;//26px
+    color:@text-normal;
+    font-size: 12px;
 }
 
 a,button,input,textarea,select {
@@ -39,6 +42,7 @@ li {
 }
 
 a {
+    color:@text-normal;
     text-decoration: none;
 }
 
@@ -140,9 +144,47 @@ textarea {
     -o-box-align: center;
     box-align: center;
 }
+/*水平翻转*/
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+
+/*垂直翻转*/
+.flipy {
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
 /******* public end *******/
 
 /******* shushi00 UI standard *******/
+/* 字体加载 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfontyyy') format('svg');
+}
+//字体
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:@h1;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
 /* 重置input 提示符字体颜色 */
 ::-webkit-input-placeholder { 
     /* WebKit browsers */
@@ -170,4 +212,13 @@ html,body{
 }
 .fr{
     float:right;
+}
+/* 面包屑 */
+.crumbs-box{
+    padding:@space2 0;
+    overflow: hidden;
+}
+.crumbs-box li{
+    float:left;
+    font-size: @fz15;
 }
